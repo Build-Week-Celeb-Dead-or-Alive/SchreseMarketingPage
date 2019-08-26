@@ -25,6 +25,7 @@
             justify-content: center;
             font-size: 2rem;
             padding-bottom: 2%;
+            width: 100%;
         }
     }
     .threeSections {
@@ -38,21 +39,26 @@
                 width: 45%;
                 padding-left: 5%;
             }
-            p {
+            .paragraphs {
                 display: flex;
                 flex-direction: column;
-                width: 20%;
+                align-items: center;
+                width: 80%;
+                padding-top: 15%;
                 padding-right: 5%;
+                
+                // create a mixin that takes the .paragraph section and has the p{} on it for padding
             }
+            
         }
         .game {
             display: flex;
             flex-direction: row;
 
-            p {
+            .paragraphs {
                 display: flex;
                 flex-direction: column;
-                width: 20%;
+                width: 80%;
                 padding-left: 5%;
             }
             .gameImg {
@@ -69,10 +75,10 @@
                 width: 45%;
                 padding-left: 5%;
             }
-            p {
+            .paragraphs {
                 display: flex;
                 flex-direction: column;
-                width: 20%;
+                width: 80%;
                 padding-right: 5%;
             }
         }
