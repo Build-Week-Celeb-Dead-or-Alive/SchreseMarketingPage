@@ -229,3 +229,77 @@ p {
   width: 30vh;
   padding-left: 5%;
 }
+.main .celebs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 95vw;
+  padding-left: 5vw;
+  padding-top: 10vh;
+}
+.main .celebs .celeb {
+  height: 50vh;
+}
+.main .celebs h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  padding: 2%;
+}
+.main .celebs p {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding-bottom: 2%;
+}
+.main .threeSections {
+  width: 100vw;
+}
+.main .threeSections .ourApp {
+  display: flex;
+  flex-direction: row;
+}
+.main .threeSections .ourApp .app {
+  width: 45%;
+  padding-left: 5%;
+}
+.main .threeSections .ourApp p {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-right: 5%;
+}
+.main .threeSections .game {
+  display: flex;
+  flex-direction: row;
+}
+.main .threeSections .game p {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-left: 5%;
+}
+.main .threeSections .game .gameImg {
+  width: 45%;
+  padding-right: 5%;
+}
+.main .threeSections .party {
+  display: flex;
+  flex-direction: row;
+}
+.main .threeSections .party .enjoy {
+  width: 45%;
+  padding-left: 5%;
+}
+.main .threeSections .party p {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-right: 5%;
+}
+.main footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  color: darkgray;
+}
