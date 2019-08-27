@@ -204,7 +204,7 @@ p {
   position: fixed;
   z-index: 3;
   width: 100vw;
-  background-color: lightgrey;
+  background-color: #535ebf;
   padding: 1%;
 }
 .navigation div {
@@ -229,6 +229,9 @@ p {
   width: 30vh;
   padding-left: 5%;
 }
+.main {
+  background: #f8f59b;
+}
 .main .celebs {
   display: flex;
   justify-content: center;
@@ -245,6 +248,7 @@ p {
   justify-content: center;
   font-size: 4rem;
   padding: 2%;
+  background: #ba53bf;
 }
 .main .celebs p {
   display: flex;
@@ -252,6 +256,7 @@ p {
   font-size: 2rem;
   padding-bottom: 2%;
   width: 100%;
+  background: #ba53bf;
 }
 .main .threeSections {
   width: 100vw;
@@ -259,6 +264,7 @@ p {
 .main .threeSections .ourApp {
   display: flex;
   flex-direction: row;
+  width: 95vw;
 }
 .main .threeSections .ourApp .app {
   width: 45%;
@@ -271,6 +277,7 @@ p {
   width: 80%;
   padding-top: 15%;
   padding-right: 5%;
+  background: #bf8553;
 }
 .main .threeSections .game {
   display: flex;
@@ -281,6 +288,7 @@ p {
   flex-direction: column;
   width: 80%;
   padding-left: 5%;
+  background: #ba53bf;
 }
 .main .threeSections .game .gameImg {
   width: 45%;
@@ -289,6 +297,7 @@ p {
 .main .threeSections .party {
   display: flex;
   flex-direction: row;
+  padding-bottom: 5%;
 }
 .main .threeSections .party .enjoy {
   width: 45%;
@@ -299,6 +308,7 @@ p {
   flex-direction: column;
   width: 80%;
   padding-right: 5%;
+  background: #bf8553;
 }
 .main footer {
   display: flex;
@@ -306,6 +316,7 @@ p {
   padding-top: 2%;
   padding-bottom: 2%;
   color: darkgray;
+  background: #535ebf;
 }
 .aboutUs h2 {
   display: flex;
@@ -372,4 +383,28 @@ p {
   padding-top: 2%;
   padding-bottom: 2%;
   color: darkgray;
+  background: #535ebf;
+}
+.color {
+  display: inline;
+}
+.color .color1 {
+  background: #535ebf;
+  width: 100px;
+  height: 100px;
+}
+.color .color2 {
+  background: #bf8553;
+  width: 100px;
+  height: 100px;
+}
+.color .color3 {
+  background: #f8f59b;
+  width: 100px;
+  height: 100px;
+}
+.color .color4 {
+  background: #ba53bf;
+  width: 100px;
+  height: 100px;
 }
