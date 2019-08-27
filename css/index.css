@@ -178,7 +178,9 @@ html,
 body {
   color: black;
 }
-h1,
+h1 {
+  font-family: 'Bubblegum Sans', cursive;
+}
 h2,
 h3,
 h4,
@@ -193,7 +195,7 @@ h3 {
 }
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.4;
 }
 .navigation {
@@ -204,7 +206,8 @@ p {
   position: fixed;
   z-index: 3;
   width: 100vw;
-  background-color: #535ebf;
+  background-color: #D83E58;
+  opacity: 0.9;
   padding: 1%;
 }
 .navigation div {
@@ -230,45 +233,58 @@ p {
   padding-left: 5%;
 }
 .main {
-  background: #f8f59b;
+  background: #2CBF89;
 }
 .main .celebs {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 95vw;
-  padding-left: 5vw;
+  width: 98vw;
+  padding-left: 2vw;
   padding-top: 10vh;
 }
-.main .celebs .celeb {
+.main .celebs .celebRow {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: #056CF2;
+}
+.main .celebs .celebRow .celeb {
   height: 50vh;
 }
-.main .celebs h1 {
+.main .celebs .wording {
+  padding-top: 2vh;
+}
+.main .celebs .wording h1 {
   display: flex;
   justify-content: center;
   font-size: 4rem;
   padding: 2%;
-  background: #ba53bf;
+  background: #056CF2;
 }
-.main .celebs p {
+.main .celebs .wording p {
   display: flex;
   justify-content: center;
   font-size: 2rem;
   padding-bottom: 2%;
   width: 100%;
-  background: #ba53bf;
+  background: #056CF2;
 }
 .main .threeSections {
   width: 100vw;
+  padding-top: 2vh;
 }
 .main .threeSections .ourApp {
   display: flex;
   flex-direction: row;
-  width: 95vw;
+  width: 98vw;
+  height: 50vh;
+  padding-bottom: 2vh;
 }
 .main .threeSections .ourApp .app {
   width: 45%;
-  padding-left: 5%;
+  padding-left: 2%;
 }
 .main .threeSections .ourApp .paragraphs {
   display: flex;
@@ -277,46 +293,58 @@ p {
   width: 80%;
   padding-top: 15%;
   padding-right: 5%;
-  background: #bf8553;
+  background: #D97762;
 }
 .main .threeSections .game {
   display: flex;
   flex-direction: row;
+  width: 98vw;
+  height: 50vh;
+  padding-bottom: 2vh;
+  padding-left: 2vw;
 }
 .main .threeSections .game .paragraphs {
   display: flex;
   flex-direction: column;
   width: 80%;
   padding-left: 5%;
-  background: #ba53bf;
+  background: #D97762;
 }
 .main .threeSections .game .gameImg {
   width: 45%;
-  padding-right: 5%;
+  padding-right: 0%;
 }
 .main .threeSections .party {
   display: flex;
   flex-direction: row;
-  padding-bottom: 5%;
+  padding-bottom: 4vh;
+  width: 98vw;
+  height: 50vh;
 }
 .main .threeSections .party .enjoy {
   width: 45%;
-  padding-left: 5%;
+  padding-left: 2vw;
 }
 .main .threeSections .party .paragraphs {
   display: flex;
   flex-direction: column;
   width: 80%;
   padding-right: 5%;
-  background: #bf8553;
+  background: #D97762;
 }
-.main footer {
+.main .btn {
   display: flex;
   justify-content: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  color: darkgray;
-  background: #535ebf;
+  padding-bottom: 3vh;
+  height: 8vh;
+}
+.main .btn button {
+  font-size: 3rem;
+  width: 20vw;
+  background: #D83E58;
+  border-radius: 15px;
+  color: #535ebf;
+  font-weight: bold;
 }
 .aboutUs h2 {
   display: flex;
@@ -337,6 +365,7 @@ p {
 .team {
   display: flex;
   width: 90vw;
+  padding-bottom: 3%;
 }
 .team img {
   display: flex;
@@ -347,6 +376,8 @@ p {
 .team .text {
   padding-left: 5%;
   padding-top: 7%;
+  padding-right: 5%;
+  background: green;
 }
 .team .text h3 {
   font-size: 4rem;
@@ -359,6 +390,14 @@ p {
 .team .text a {
   font-size: 2rem;
   text-decoration: none;
+}
+.team .text #triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid red;
+  border-bottom: 50px solid transparent;
+  z-index: 5;
 }
 .bottom {
   background: lightgray;
@@ -377,7 +416,7 @@ p {
   font-size: 2rem;
   padding: 3% 0;
 }
-.bottom footer {
+footer {
   display: flex;
   justify-content: center;
   padding-top: 2%;
