@@ -2,7 +2,7 @@
 
 .main {
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-    
+
     .celebs {
         display: flex;
         justify-content: center;
@@ -16,6 +16,11 @@
             justify-content: space-evenly;
             padding-top: 5vh;
             padding-bottom: 5vh;
+
+            @media @phone {
+                width: 100%;
+                flex-wrap: wrap;
+            }
 
             .celeb {
                 .explanationFormatting();
@@ -43,6 +48,13 @@
         width: 100vw;
         padding-top: 2vh;
         
+        @media @phone {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        
 
         .ourApp {
             display: flex;
@@ -53,8 +65,20 @@
             margin: 0 auto;
             border-bottom: 1px dashed black;
             
-           
-
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-left: 5vw;
+                border-bottom: none;
+            }
+            .appImg {
+                @media @phone {
+                    padding-left: 20vw;
+                }
+            }
             .app {
                 .special();
             }
@@ -74,6 +98,20 @@
             margin: 0 auto;
             border-bottom: 1px dashed black;
 
+            @media @phone {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;    
+                border-bottom: none;
+            }
+            .imgContain {
+                @media @phone {
+                    padding-left: 20vw;
+                }
+            }
+
             .paragraphs {
                 .pLeft();
             }
@@ -91,8 +129,21 @@
             padding-top: 1vh;
             margin: 0 auto;
             border-bottom: 1px dashed black;
-            
 
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-left: 5vw;
+                border-bottom: none;
+            }
+            .enjoyContain{
+                @media @phone {
+                    padding-left: 20vw;
+            }
+        }
             .enjoy {
                 .special();
             }
@@ -116,6 +167,10 @@
             border-radius: 15px;
             color: #535ebf;
             font-weight: bold; 
+
+            @media @phone {
+                width: 60vw;
+            }
         }
  
     }
