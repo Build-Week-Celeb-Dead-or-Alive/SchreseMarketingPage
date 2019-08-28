@@ -216,8 +216,28 @@ p {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .navigation div {
+    flex-direction: row-reverse;
+  }
+}
+.navigation div .logo {
+  width: 3vw;
+  height: 3vw;
+}
+@media (max-width: 500px) {
+  .navigation div .logo {
+    width: 8vw;
+    height: 8vw;
+  }
+}
 .navigation div h1 {
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .navigation div h1 {
+    font-size: 2rem;
+  }
 }
 .navigation div nav {
   display: flex;

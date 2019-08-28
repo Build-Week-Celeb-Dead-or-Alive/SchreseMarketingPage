@@ -17,8 +17,26 @@
         // padding-top: 2%;
         align-items: center;
 
+        @media @phone {
+            flex-direction: row-reverse;
+            
+        }
+
+        .logo {
+            width: 3vw;
+            height: 3vw;
+
+            @media @phone {
+                width: 8vw;
+                height: 8vw;
+            }
+        }
+
         h1 {
             font-size: 3rem;
+            @media @phone{
+                font-size: 2rem
+            }
         }
 
         nav {
