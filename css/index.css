@@ -173,6 +173,7 @@ textarea {
 }
 html {
   font-size: 62.5%;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
 html,
 body {
@@ -222,13 +223,6 @@ p {
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 800px) {
-  .navigation div nav {
-    width: 95%;
-    height: 5vh;
-    align-items: center;
-  }
-}
 @media (max-width: 500px) {
   .navigation div nav {
     width: 95%;
@@ -244,20 +238,11 @@ p {
   width: 30vh;
   padding-left: 5%;
 }
-@media (max-width: 800px) {
-  .navigation div nav a {
-    width: 10vh;
-    font-size: 1.7rem;
-  }
-}
 @media (max-width: 500px) {
   .navigation div nav a {
     width: 10vh;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
-}
-.main {
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
 .main .celebs {
   display: flex;
@@ -311,43 +296,42 @@ p {
   padding-bottom: 2%;
   width: 100%;
 }
-.main .threeSections {
+.threeSections {
   width: 100vw;
-  padding-top: 2vh;
+  padding-top: 10vh;
 }
 @media (max-width: 500px) {
-  .main .threeSections {
+  .threeSections {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+    padding-top: 0%;
   }
 }
-.main .threeSections .ourApp {
+.threeSections .ourApp {
   display: flex;
   flex-direction: row;
   width: 98vw;
   height: 72vh;
   padding-bottom: 2vh;
+  padding-top: 1vh;
   margin: 0 auto;
+  border-top: 1px dashed black;
   border-bottom: 1px dashed black;
 }
 @media (max-width: 500px) {
-  .main .threeSections .ourApp {
+  .threeSections .ourApp {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
-    padding-left: 5vw;
+    height: 1px;
+    width: 100vw;
+    padding-left: 0;
     border-bottom: none;
   }
 }
-@media (max-width: 500px) {
-  .main .threeSections .ourApp .appImg {
-    padding-left: 20vw;
-  }
-}
-.main .threeSections .ourApp .app {
+.threeSections .ourApp .appImg .app {
   width: 35vw;
   height: 35vw;
   object-fit: cover;
@@ -356,12 +340,13 @@ p {
   box-shadow: 4px 4px 10px black;
 }
 @media (max-width: 500px) {
-  .main .threeSections .ourApp .app {
-    width: 55vw;
-    height: 55vw;
+}
+@media (max-width: 500px) {
+  .threeSections .ourApp .appImg {
+    display: none;
   }
 }
-.main .threeSections .ourApp .paragraphs {
+.threeSections .ourApp .paragraphs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -370,22 +355,24 @@ p {
   padding-right: 5%;
 }
 @media (max-width: 500px) {
-  .main .threeSections .ourApp .paragraphs {
-    width: 98%;
+  .threeSections .ourApp .paragraphs {
+    width: 100vw;
+    height: 20vh;
+    padding-top: 10vh;
     padding-right: 0%;
     margin: 0 auto;
   }
 }
-.main .threeSections .ourApp .paragraphs p {
+.threeSections .ourApp .paragraphs p {
   padding-top: 5%;
 }
 @media (max-width: 500px) {
-  .main .threeSections .ourApp .paragraphs p {
+  .threeSections .ourApp .paragraphs p {
     font-size: 2rem;
     padding-left: 3%;
   }
 }
-.main .threeSections .game {
+.threeSections .game {
   display: flex;
   flex-direction: row;
   width: 98vw;
@@ -397,21 +384,18 @@ p {
   border-bottom: 1px dashed black;
 }
 @media (max-width: 500px) {
-  .main .threeSections .game {
+  .threeSections .game {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
+    padding-left: 0%;
+    padding-bottom: 0%;
     border-bottom: none;
   }
 }
-@media (max-width: 500px) {
-  .main .threeSections .game .imgContain {
-    padding-left: 20vw;
-  }
-}
-.main .threeSections .game .paragraphs {
+.threeSections .game .paragraphs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,22 +404,25 @@ p {
   padding-left: 5%;
 }
 @media (max-width: 500px) {
-  .main .threeSections .game .paragraphs {
-    width: 99%;
+  .threeSections .game .paragraphs {
+    width: 100vw;
+    height: 20vh;
+    padding-top: 10vh;
     padding-right: 0%;
+    padding-left: 0%;
     margin: 0 auto;
   }
 }
-.main .threeSections .game .paragraphs p {
+.threeSections .game .paragraphs p {
   padding-top: 5%;
 }
 @media (max-width: 500px) {
-  .main .threeSections .game .paragraphs p {
+  .threeSections .game .paragraphs p {
     font-size: 2rem;
     padding-left: 3%;
   }
 }
-.main .threeSections .game .gameImg {
+.threeSections .game .imgContain .gameImg {
   width: 35vw;
   height: 35vw;
   object-fit: cover;
@@ -444,12 +431,13 @@ p {
   box-shadow: 4px 4px 10px black;
 }
 @media (max-width: 500px) {
-  .main .threeSections .game .gameImg {
-    width: 55vw;
-    height: 55vw;
+}
+@media (max-width: 500px) {
+  .threeSections .game .imgContain {
+    display: none;
   }
 }
-.main .threeSections .party {
+.threeSections .party {
   display: flex;
   flex-direction: row;
   width: 98vw;
@@ -460,22 +448,20 @@ p {
   border-bottom: 1px dashed black;
 }
 @media (max-width: 500px) {
-  .main .threeSections .party {
+  .threeSections .party {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
-    padding-left: 5vw;
+    width: 100vw;
+    height: 1vh;
+    padding-left: 0;
+    padding-top: 0vh;
     border-bottom: none;
+    padding-bottom: 40vh;
   }
 }
-@media (max-width: 500px) {
-  .main .threeSections .party .enjoyContain {
-    padding-left: 20vw;
-  }
-}
-.main .threeSections .party .enjoy {
+.threeSections .party .enjoyContain .enjoy {
   width: 35vw;
   height: 35vw;
   object-fit: cover;
@@ -484,12 +470,13 @@ p {
   box-shadow: 4px 4px 10px black;
 }
 @media (max-width: 500px) {
-  .main .threeSections .party .enjoy {
-    width: 55vw;
-    height: 55vw;
+}
+@media (max-width: 500px) {
+  .threeSections .party .enjoyContain {
+    display: none;
   }
 }
-.main .threeSections .party .paragraphs {
+.threeSections .party .paragraphs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -498,29 +485,31 @@ p {
   padding-right: 5%;
 }
 @media (max-width: 500px) {
-  .main .threeSections .party .paragraphs {
-    width: 98%;
+  .threeSections .party .paragraphs {
+    width: 100vw;
+    height: 20vh;
+    padding-top: 10vh;
     padding-right: 0%;
     margin: 0 auto;
   }
 }
-.main .threeSections .party .paragraphs p {
+.threeSections .party .paragraphs p {
   padding-top: 5%;
 }
 @media (max-width: 500px) {
-  .main .threeSections .party .paragraphs p {
+  .threeSections .party .paragraphs p {
     font-size: 2rem;
     padding-left: 3%;
   }
 }
-.main .btn {
+.btn {
   display: flex;
   justify-content: center;
   padding-bottom: 3vh;
   padding-top: 2vh;
   height: 10vh;
 }
-.main .btn button {
+.btn button {
   font-size: 3rem;
   width: 20vw;
   background: #D83E58;
@@ -529,12 +518,17 @@ p {
   font-weight: bold;
 }
 @media (max-width: 500px) {
-  .main .btn button {
+  .btn button {
     width: 60vw;
   }
 }
 .aboutUs {
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
+@media (max-width: 500px) {
+  .aboutUs .about {
+    padding-top: 10vh;
+  }
 }
 .aboutUs .about h2 {
   display: flex;
@@ -560,6 +554,11 @@ p {
   padding-left: 5vw;
   padding-right: 5vw;
 }
+@media (max-width: 500px) {
+  .aboutUs .team {
+    padding-left: 2%;
+  }
+}
 .aboutUs .team img {
   width: 15vw;
   height: 15vw;
@@ -568,6 +567,13 @@ p {
   border: 4px solid white;
   box-shadow: 4px 4px 10px black;
 }
+@media (max-width: 500px) {
+  .aboutUs .team img {
+    width: 30vw;
+    height: 30vw;
+    z-index: 2;
+  }
+}
 .aboutUs .team .text {
   padding-left: 20%;
   padding-top: 4%;
@@ -575,6 +581,13 @@ p {
   width: 70vw;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   transform: skew(20deg);
+}
+@media (max-width: 500px) {
+  .aboutUs .team .text {
+    width: 90vw;
+    padding-top: 20%;
+    padding-left: 8%;
+  }
 }
 .aboutUs .team .text h3 {
   font-size: 4rem;

@@ -1,7 +1,7 @@
 // This is for the main part of the home page
 
 .main {
-    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    // background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 
     .celebs {
         display: flex;
@@ -44,143 +44,170 @@
             }
         }
     }
-    .threeSections {
-        width: 100vw;
-        padding-top: 2vh;
+}
+.threeSections {
+    width: 100vw;
+    padding-top: 10vh;
+    
+    
+    @media @phone {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 0%;
+    }
+
+    
+
+    .ourApp {
+        display: flex;
+        flex-direction: row;
+        width: 98vw;
+        height: 72vh;
+        padding-bottom: 2vh;
+        padding-top: 1vh;
+        margin: 0 auto;
+        border-top: 1px dashed black;
+        border-bottom: 1px dashed black;
         
         @media @phone {
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 1px;
+            width: 100vw;
+            padding-left: 0;
+            border-bottom: none;
         }
-
-        
-
-        .ourApp {
-            display: flex;
-            flex-direction: row;
-            width: 98vw;
-            height: 72vh;
-            padding-bottom: 2vh;
-            margin: 0 auto;
-            border-bottom: 1px dashed black;
-            
-            @media @phone {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                flex-wrap: wrap;
-                width: 100%;
-                padding-left: 5vw;
-                border-bottom: none;
-            }
-            .appImg {
-                @media @phone {
-                    padding-left: 20vw;
-                }
-            }
+        .appImg {
             .app {
                 .special();
             }
-            .paragraphs {
-                .pRight();
-            }
-            
-        }
-        .game {
-            display: flex;
-            flex-direction: row;
-            width: 98vw;
-            height: 74vh;
-            padding-top: 2vh;
-            padding-bottom: 2vh;
-            padding-left: 2vw;
-            margin: 0 auto;
-            border-bottom: 1px dashed black;
-
             @media @phone {
-                display: flex;
-                flex-direction: column-reverse;
-                justify-content: center;
-                flex-wrap: wrap;
-                width: 100%;    
-                border-bottom: none;
-            }
-            .imgContain {
-                @media @phone {
-                    padding-left: 20vw;
-                }
+                display: none;
             }
 
-            .paragraphs {
-                .pLeft();
+            // @media @phone {
+            //     padding-left: 20vw;
+            //     width: 48vw;
             }
+        
+
+        .paragraphs {
+            .pRight();
+        }
+        
+    }
+    .game {
+        display: flex;
+        flex-direction: row;
+        width: 98vw;
+        height: 74vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 2vw;
+        margin: 0 auto;
+        border-bottom: 1px dashed black;
+        
+
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100vw; 
+            padding-left: 0%;  
+            padding-bottom: 0%; 
+            border-bottom: none;
+        }
+
+        .paragraphs {
+            .pLeft();
+        }
+
+
+        .imgContain {
             .gameImg {
                 .special();
             }
-
-        }
-        .party {
-            display: flex;
-            flex-direction: row;
-            width: 98vw;
-            height: 72vh;
-            padding-bottom: 2vh;
-            padding-top: 1vh;
-            margin: 0 auto;
-            border-bottom: 1px dashed black;
-
             @media @phone {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                flex-wrap: wrap;
-                width: 100%;
-                padding-left: 5vw;
-                border-bottom: none;
-            }
-            .enjoyContain{
-                @media @phone {
-                    padding-left: 20vw;
+                display: none;
             }
         }
+
+
+
+    }
+    .party {
+        display: flex;
+        flex-direction: row;
+        width: 98vw;
+        height: 72vh;
+        padding-bottom: 2vh;
+        padding-top: 1vh;
+        margin: 0 auto;
+        border-bottom: 1px dashed black;
+
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100vw;
+            height: 1vh;
+            padding-left: 0;
+            padding-top: 0vh;
+            border-bottom: none;
+            padding-bottom: 40vh;
+        }
+        .enjoyContain{
             .enjoy {
                 .special();
             }
-            .paragraphs {
-                .pRight();
-            }
+            @media @phone {
+                display: none;
         }
     }
-    .btn {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 3vh;
-        padding-top: 2vh;
-        height: 10vh;
-        
-        
-        button {
-            font-size: 3rem;
-            width: 20vw;
-            background: #D83E58;
-            border-radius: 15px;
-            color: #535ebf;
-            font-weight: bold; 
 
-            @media @phone {
-                width: 60vw;
-            }
+        .paragraphs {
+            .pRight();
         }
- 
     }
 }
+.btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vh;
+    padding-top: 2vh;
+    height: 10vh;
+    
+    
+    button {
+        font-size: 3rem;
+        width: 20vw;
+        background: #D83E58;
+        border-radius: 15px;
+        color: #535ebf;
+        font-weight: bold; 
+
+        @media @phone {
+            width: 60vw;
+        }
+    }
+
+}
+
+
 
 // This is the section for the About page
 .aboutUs {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);    
     
     .about {
+        @media @phone {
+            padding-top: 10vh;
+        }
         h2 {
             display: flex;
             justify-content: center;
@@ -188,7 +215,8 @@
             padding: 2%;
             width: 95vw;
             padding-top: 10%;
-            
+
+
         }
         p {
             display: flex;
@@ -206,6 +234,10 @@
         padding-bottom: 3%;
         padding-left: 5vw;
         padding-right: 5vw;
+
+        @media @phone {
+            padding-left: 2%;
+        }
         
       
         img {
@@ -215,6 +247,12 @@
             border-radius: 50%;
             border: 4px solid white;
             box-shadow: 4px 4px 10px black;
+
+            @media @phone {
+                width: 30vw;
+                height: 30vw;
+                z-index: 2;
+            }
             
         }
         
@@ -227,6 +265,12 @@
             background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
             // border-radius: 25%;
             transform: skew(20deg);
+
+            @media @phone {
+                width: 90vw;
+                padding-top: 20%;
+                padding-left: 8%;
+            }
             
 
             h3 {
