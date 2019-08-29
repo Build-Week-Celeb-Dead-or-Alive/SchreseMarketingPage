@@ -3,11 +3,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
     position: fixed;
+    margin: 0 auto;
     z-index: 3;
     width: 100vw;
-    background-color: #D83E58;
+    background-color: #535ebf;
     opacity: 0.9;
     padding: 1%;
     
@@ -19,7 +19,6 @@
 
         @media @phone {
             flex-direction: row-reverse;
-            
         }
 
         .logo {
@@ -34,24 +33,33 @@
 
         h1 {
             font-size: 3rem;
+            
             @media @phone{
                 font-size: 2rem
+            }
+            @media @tablet {
+                font-size: 2rem;
             }
         }
 
         nav {
             display: flex;
             justify-content: space-around;
+            
 
-            // @media @tablet {
-            //     width: 95%;
-            //     height: 5vh;
-            //     align-items: center;
-            // }
+            @media @tablet {
+                width: 95%;
+                height: 5vh;
+                align-items: center;
+            }
 
             @media @phone {
                 width: 95%;
                
+            }
+            @media @tablet {
+                width: 95%;
+                
             }
 
             a {
@@ -71,13 +79,16 @@
             //    }
 
                @media @phone {
-                width: 10vh;
+                width: 10vw;
                 font-size: 1.5rem;
             }  
+                @media @tablet { 
+                width: 10vh;
+                font-size: 1.5rem;
             }
 
         }
     
-
+    }
     }
 }
