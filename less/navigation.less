@@ -1,0 +1,100 @@
+// this is for the Nav bar
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // position: fixed;
+    margin: 0 auto;
+    z-index: 3;
+    width: 100vw;
+    background-color: #535ebf;
+    opacity: 0.9;
+    padding: 1%;
+
+    @media @phone {
+        width: 100%;
+        padding: 0px;
+    }
+    
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        // padding-top: 2%;
+        align-items: center;
+
+        @media @phone {
+            flex-direction: row-reverse;
+        }
+
+        .logo {
+            width: 3vw;
+            height: 3vw;
+
+            @media @phone {
+                display: none;
+                // width: 6vw;
+                // height: 6vw;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            
+            @media @phone{
+                font-size: 2rem
+            }
+            @media @tablet {
+                font-size: 2rem;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            
+
+            @media @tablet {
+                width: 95%;
+                height: 5vh;
+                align-items: center;
+            }
+
+            @media @phone {
+                width: 95%;
+               
+            }
+            @media @tablet {
+                width: 95%;
+                
+            }
+
+            a {
+               display: flex;
+               justify-content: space-evenly;
+          
+               margin: 0 auto;
+               text-decoration: none;
+               color: black;
+               font-size: 2.5rem; 
+               width: 30vh;
+               padding-left: 5%;
+
+            //    @media @tablet {
+            //        width: 10vh;
+            //        font-size: 1.7rem;
+            //    }
+
+               @media @phone {
+                width: 10vw;
+                font-size: 1.5rem;
+            }  
+                @media @tablet { 
+                width: 10vh;
+                font-size: 1.5rem;
+            }
+
+        }
+    
+    }
+    }
+}

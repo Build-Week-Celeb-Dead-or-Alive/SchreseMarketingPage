@@ -1,0 +1,372 @@
+// This is for the main part of the home page
+#topBtn {
+    position: fixed;
+    bottom: 40%;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    text-decoration: none;
+    background-color: #D97762;
+    color: black;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 3rem;
+    border: 4px solid #056CF2;
+    border-radius: 50%;
+    @media @phone {
+        display: none;
+        // width: 50px;
+        // height: 50px;
+    }
+    @media @tablet {
+        right: 65px;
+    }
+
+    p {
+        font-size: 3rem;
+        font-family: 'Lexend Deca', sans-serif;
+        padding-top: 20px;
+        padding-left: 20px;
+
+        @media @phone {
+            font-size: 2rem;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+    }
+}
+
+.main {
+    // background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+
+    .celebs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 98vw;
+        padding-left: 2vw;
+        padding-top: 10vh;
+
+        .celebRow {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+
+            @media @phone {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .celeb {
+                .explanationFormatting();
+            }
+        }
+        .wording {
+            padding-top: 2vh;
+            
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-size: 4rem;
+                padding: 2%;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                font-size: 2rem;
+                padding-bottom: 2%;
+                width: 100%;
+            }
+        }
+    }
+}
+.threeSections {
+    width: 100vw;
+    padding-top: 10vh;
+    
+    
+    @media @phone {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 0%;
+        
+    }
+
+    
+
+    .ourApp {
+        display: flex;
+        flex-direction: row;
+        width: 98vw;
+        height: 72vh;
+        padding-bottom: 2vh;
+        padding-top: 1vh;
+        margin: 0 auto;
+        border-top: 1px dashed black;
+        border-bottom: 1px dashed black;
+        
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 1px;
+            width: 100vw;
+            padding-left: 0;
+            border-bottom: none;
+        }
+
+        @media @tablet {
+            height: 50vh;
+            padding-top: 0vh;
+            margin: 0 auto;
+        }
+        .appImg {
+            .app {
+                .special();
+            }
+            @media @phone {
+                display: none;
+            }
+
+            @media @tablet {
+                padding-top: 10vh;
+            }
+            }
+        
+        .paragraphs {
+            .pRight();
+            
+        }
+        
+    }
+    .game {
+        display: flex;
+        flex-direction: row;
+        width: 98vw;
+        height: 74vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 2vw;
+        margin: 0 auto;
+        border-bottom: 1px dashed black;
+        
+
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100vw; 
+            padding-left: 0%;  
+            padding-bottom: 0%; 
+            border-bottom: none;
+        }
+        @media @tablet {
+            height: 50vh;
+            padding-top: 0vh;
+            margin: 0 auto;
+        }
+
+        .paragraphs {
+            .pLeft();
+        }
+
+
+        .imgContain {
+            .gameImg {
+                .special();
+            }
+            @media @phone {
+                display: none;
+            }
+            @media @tablet {
+                padding-top: 10vh;
+            }
+        }
+
+
+
+    }
+    .party {
+        display: flex;
+        flex-direction: row;
+        width: 98vw;
+        height: 72vh;
+        padding-bottom: 2vh;
+        padding-top: 1vh;
+        margin: 0 auto;
+        border-bottom: 1px dashed black;
+
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100vw;
+            height: 1vh;
+            padding-left: 0;
+            padding-top: 0vh;
+            border-bottom: none;
+            padding-bottom: 40vh;
+        }
+        @media @tablet {
+            height: 50vh;
+            padding-top: 0vh;
+            margin: 0 auto;
+        }
+        .enjoyContain{
+            .enjoy {
+                .special();
+            }
+            @media @phone {
+                display: none;
+        }
+            @media @tablet {
+                padding-top: 10vh;
+            }
+    }
+
+        .paragraphs {
+            .pRight();
+        }
+    }
+}
+.btn {
+    .customBtn();
+
+}
+
+
+
+// This is the section for the About page
+.aboutUs {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);    
+    
+    .about {
+        @media @phone {
+            padding-top: 10vh;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 4rem;
+            padding: 2%;
+            width: 95vw;
+            padding-top: 10%;
+
+
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            padding-bottom: 5vh;
+            width: 98vw;
+            padding-left: 2%;
+        }
+    }
+    .team {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        padding-bottom: 3%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+
+        @media @phone {
+            padding-left: 2%;
+        }
+        
+      
+        img {
+            width: 15vw;
+            height: 15vw;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 4px 4px 10px black;
+
+            @media @phone {
+                width: 30vw;
+                height: 30vw;
+                z-index: 2;
+            }
+            @media @tablet {
+                width: 30vw;
+                height: 30vw;
+                z-index:2;
+            }
+            
+        }
+        
+          
+        .text {
+            padding-left: 20%;
+            padding-top: 4%;
+            height: 30vh;
+            width: 70vw;
+            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            // border-radius: 25%;
+            transform: skew(20deg);
+
+            @media @phone {
+                height: 20vh;
+                width: 90vw;
+                padding-top: 2%;
+                padding-left: 8%;
+            }
+            @media @tablet {
+                padding-top: 8%;
+                padding-left: 8%;
+                height: 30vh;
+                width: 90vw;
+            }
+            
+
+            h3 {
+                font-size: 4rem;
+                padding-bottom: 3%;
+                transform: skew(-20deg);
+            }
+            p {
+                font-size: 2rem;
+                padding-bottom: 3%;
+                transform: skew(-20deg);
+            }
+            a {
+                font-size: 2rem;
+                text-decoration: none;
+                transform: skew(-20deg);
+            }
+    
+        }
+    }
+}
+
+
+.bottom {
+    background: lightgray;
+    h2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+        color: blue;
+   
+    }
+    div {
+        display: flex;
+        justify-content: space-around;
+        
+        h4 {
+            font-size: 2rem;
+            padding: 3% 0;
+        }
+    }
+
+}
+
