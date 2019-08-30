@@ -210,6 +210,12 @@ p {
   opacity: 0.9;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+    padding: 0px;
+  }
+}
 .navigation div {
   display: flex;
   justify-content: space-evenly;
@@ -226,8 +232,7 @@ p {
 }
 @media (max-width: 500px) {
   .navigation div .logo {
-    width: 8vw;
-    height: 8vw;
+    display: none;
   }
 }
 .navigation div h1 {
@@ -301,11 +306,28 @@ p {
   border: 4px solid #056CF2;
   border-radius: 50%;
 }
+@media (max-width: 500px) {
+  #topBtn {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #topBtn {
+    right: 65px;
+  }
+}
 #topBtn p {
   font-size: 3rem;
   font-family: 'Lexend Deca', sans-serif;
   padding-top: 20px;
   padding-left: 20px;
+}
+@media (max-width: 500px) {
+  #topBtn p {
+    font-size: 2rem;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
 }
 .main .celebs {
   display: flex;
@@ -365,6 +387,7 @@ p {
 }
 @media (max-width: 500px) {
   .threeSections {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -429,9 +452,9 @@ p {
 }
 @media (max-width: 500px) {
   .threeSections .ourApp .paragraphs {
-    width: 100vw;
+    width: 100%;
     height: 20vh;
-    padding-top: 10vh;
+    padding-top: 0%;
     padding-right: 0%;
     margin: 0 auto;
   }
@@ -446,13 +469,20 @@ p {
 .threeSections .ourApp .paragraphs h2 {
   padding-right: 70%;
 }
+@media (max-width: 500px) {
+  .threeSections .ourApp .paragraphs h2 {
+    padding-right: 20%;
+    justify-content: center;
+    display: inline;
+  }
+}
 .threeSections .ourApp .paragraphs p {
   padding-top: 5%;
 }
 @media (max-width: 500px) {
   .threeSections .ourApp .paragraphs p {
     font-size: 2rem;
-    padding-left: 3%;
+    width: 100%;
   }
 }
 .threeSections .game {
@@ -497,7 +527,7 @@ p {
   .threeSections .game .paragraphs {
     width: 100vw;
     height: 20vh;
-    padding-top: 10vh;
+    padding-top: 0;
     padding-right: 0%;
     padding-left: 0%;
     margin: 0 auto;
@@ -506,13 +536,20 @@ p {
 .threeSections .game .paragraphs h2 {
   padding-left: 70%;
 }
+@media (max-width: 500px) {
+  .threeSections .game .paragraphs h2 {
+    padding-left: 20%;
+    justify-content: flex-start;
+  }
+}
 .threeSections .game .paragraphs p {
   padding-top: 5%;
 }
 @media (max-width: 500px) {
   .threeSections .game .paragraphs p {
     font-size: 2rem;
-    padding-left: 3%;
+    padding-top: 0;
+    width: 80%;
   }
 }
 .threeSections .game .imgContain .gameImg {
@@ -592,9 +629,9 @@ p {
 }
 @media (max-width: 500px) {
   .threeSections .party .paragraphs {
-    width: 100vw;
+    width: 100%;
     height: 20vh;
-    padding-top: 10vh;
+    padding-top: 0%;
     padding-right: 0%;
     margin: 0 auto;
   }
@@ -609,13 +646,20 @@ p {
 .threeSections .party .paragraphs h2 {
   padding-right: 70%;
 }
+@media (max-width: 500px) {
+  .threeSections .party .paragraphs h2 {
+    padding-right: 20%;
+    justify-content: center;
+    display: inline;
+  }
+}
 .threeSections .party .paragraphs p {
   padding-top: 5%;
 }
 @media (max-width: 500px) {
   .threeSections .party .paragraphs p {
     font-size: 2rem;
-    padding-left: 3%;
+    width: 100%;
   }
 }
 .btn {
