@@ -578,7 +578,6 @@ p {
   padding-bottom: 2vh;
   padding-top: 1vh;
   margin: 0 auto;
-  border-bottom: 1px dashed black;
 }
 @media (max-width: 500px) {
   .threeSections .party {
@@ -665,36 +664,29 @@ p {
 .btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 3vh;
-  padding-top: 2vh;
-  height: 10vh;
-}
-.btn button {
-  font-size: 3rem;
-  width: 20vw;
-  background: #D97762;
-  border-radius: 15px;
+  width: 20%;
+  height: 50%;
+  z-index: 3;
+  text-decoration: none;
+  background-color: #D97762;
   color: #535ebf;
-  font-weight: bold;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 3rem;
+  border: 4px solid #056CF2;
+  border-radius: 20px;
+  margin: 0 auto;
   cursor: pointer;
   box-shadow: 4px 4px 10px black;
 }
 @media all and (min-width: 850px) {
-  .btn button:hover {
+  .btn:hover {
     background: #535ebf;
     color: #D97762;
   }
 }
-@media (max-width: 500px) {
-  .btn button {
-    width: 60vw;
-  }
-}
-@media (max-width: 800px) {
-  .btn button {
-    width: 60vw;
-    font-size: 3.5rem;
-  }
+.btn .button {
+  text-decoration: none;
+  padding: 5% 0;
 }
 .aboutUs {
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
